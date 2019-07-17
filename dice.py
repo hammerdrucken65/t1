@@ -1,6 +1,10 @@
 import random
 
-def getnum(quest,max): # quest = question statement is a value that I want to convert it to an integer, max is the max valid inter
+
+# getnum print "quest" to screen", takes input from user, and converts that input
+# to an integer.  If the user input cannot be converted to integer, the program
+# informs the user and tells them to start again.
+def getnum(quest,max): # quest = question statement to print to screen, max is the max valid integer
     inp = False
     while inp==False:
         diez = input(quest)
