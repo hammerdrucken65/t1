@@ -37,7 +37,7 @@ type_of_food=int(input("type of food="))
 print("please enter noun")
 noun3=int(input("noun="))
 print("please enter body part")
-body_part=int(input(body_part))
+body_part=int(input("body part="))
 print("Once upon a time there was a ADJECTIVE knight who lived in a BUILDING. Every day he went to work to VERB his enemies, and VERB his people. But his greatest dream was to VERB a dragon."
 
 "One day as he was VERB ENDING IN -ING, he heard a loud NOUN. He knew right away what it was! It was a ADJECTIVE dragon VERB ENDING IN -ING into his village! He realized he only had NUMBER minutes to save his people."
