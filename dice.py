@@ -39,6 +39,7 @@ while rollagain:       # now change this to True (simplified version while rolla
 
     die.roll()
     die20.roll()
+    for x in
     print("the value of die is %s" % (die.rollval))
     print("the value of die 20 is %s" % (die20.rollval))
     total = die.rollval+die20.rollval

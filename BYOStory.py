@@ -99,3 +99,17 @@ while storyPart==False:
                             storyPart = True
                         elif storyPart==4:
                             print("as she sat down a portal opened below her, and she fell through, and she fell, and fell then she saw a light in the dark, and she fell into it and she fell broken onto her parents' court room floor. the end")
+                            storyPart = True
+                    elif storyPart==2:
+                        print("many more knights came, each dying one way or another. then one day, an army came, and for several days the wizard and the princess's parents' army fought. then, on the ninth day, the wizard took the princess to the highest tower and shouted down 'leave now, and never come back, or I will __'")
+                        storyPart = getans("what did the wizard threaten to do 1: drop her 2: cut of her head 3: inject her with liquid evil 4: rip her heart out")
+                        if storyPart==1:
+                            storyPart = getans("did her parents 1: stand down 2: laugh and say'you don't have the streangth! none ever have.'")
+                            if storyPart==1:
+                                print("the king said'fine. you win.' then the wizard dropped her. the end.")
+                                storyPart = True
+                            elif storyPart==2:
+                                print("then he dropped her. the end")
+                                storyPart = True
+                        elif storyPart==2
+                            storyPart = getans("did her parents 1: stand down 2: laugh and say'you don't have the streangth! none ever have.'")
