@@ -13,7 +13,7 @@ def getnum(prompt, min, max): # prompt = question statement to print to screen, 
         except:
             print("bad input")
             continue
-        if userInput <= max:
+        if (userInput <= max and userInput >= min):
             validInput = True
         else:
             print("bad input")
@@ -34,6 +34,7 @@ class Die():
     def __init__(self, sides = 6):
         self.rollval = None
         self.sides = sides
+        self.color = "white"
 
     def roll(self):
         self.rollval = random.randint(1, self.sides)
@@ -44,13 +45,16 @@ while rollagain:       # now change this to True (simplified version while rolla
 
     die = []
     total = 0
-    numberOfDice = howManyDice()
+    numberOfDice = getnum(prompt="how many dice would you like to roll: ",min=1,max=30)
+    sides = getnum(prompt="how many sides do you want them to have?: ",min=4,max=30)
     for x in range(0,numberOfDice):
-        die.append(Die())
+        die.append(Die(sides=sides))
+        die[x].color=input("what color is the die: ")
         die[x].roll()
-        print(die[x].rollval)
+        print("value of the die is %s" % (die[x].rollval))
+        print("color of die is %s" % (die[x].color))
         total = total+die[x].rollval
-    print(total)
-    if getnum("would you like to roll another die? 1: yes 2: no (please use number)",1,2)==2:
+    print("total is %s" % (total))
+    if getnum(prompt="would you like to roll another die? 1: yes 2: no (please use number): ",min=1,max=2)==2:
         rollagain = False
 
