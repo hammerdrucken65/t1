@@ -46,13 +46,12 @@ while rollagain:       # now change this to True (simplified version while rolla
     die = []
     total = 0
     numberOfDice = getnum(prompt="how many dice would you like to roll: ",min=1,max=30)
-    sides = getnum(prompt="how many sides do you want them to have?: ",min=4,max=30)
+    sides = getnum(prompt="how many sides do you want them to have?: ",min=4, max=30)
     for x in range(0,numberOfDice):
         die.append(Die(sides=sides))
-        die[x].color=input("what color is the die: ")
+
         die[x].roll()
         print("value of the die is %s" % (die[x].rollval))
-        print("color of die is %s" % (die[x].color))
         total = total+die[x].rollval
     print("total is %s" % (total))
     if getnum(prompt="would you like to roll another die? 1: yes 2: no (please use number): ",min=1,max=2)==2:
